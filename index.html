@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>TikTok OAuth Callback</title>
+</head>
+<body style="font-family: sans-serif; max-width: 600px; margin: 40px auto;">
+  <h1>Autorização TikTok</h1>
+  <p>Copie o código abaixo e cole no terminal do ClipForge:</p>
+  <pre id="code" style="font-size:1.2em; background:#eee; padding:1em; word-break:break-all;"></pre>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById('code').textContent = params.get('code') || '(nenhum codigo encontrado na URL)';
+  </script>
+</body>
+</html>
