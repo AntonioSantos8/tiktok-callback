@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Autorização TikTok — Missão Gloriosa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="font-family: sans-serif; max-width: 600px; margin: 40px auto; padding: 0 16px; line-height: 1.6;">
+  <h1>Autorização TikTok</h1>
+  <p>Copie o código abaixo e cole no terminal:</p>
+  <pre id="code" style="font-size:1.2em; background:#eee; padding:1em; word-break:break-all;"></pre>
+  <p><a href="./">← Voltar ao site da Missão Gloriosa</a></p>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById('code').textContent = params.get('code') || '(nenhum código encontrado na URL)';
+  </script>
+</body>
+</html>
